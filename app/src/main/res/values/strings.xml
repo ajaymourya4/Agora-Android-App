@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Agora Vote</string>
+    <string name="login_text">Login to your Account</string>
+</resources>
