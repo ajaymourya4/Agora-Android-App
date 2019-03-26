@@ -15,9 +15,4 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="Button" >
-
-        <item name="android:background">@color/colorPrimaryDark</item>
-    </style>
-
 </resources>
