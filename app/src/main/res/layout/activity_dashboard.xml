@@ -1,18 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DashboardActivity">
 
-    <androidx.appcompat.widget.Toolbar
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <!--<androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />-->
 
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
     <TextView
         android:id="@+id/username_textview"
@@ -220,10 +227,9 @@
         android:id="@+id/login_button"
         android:layout_width="wrap_content"
         android:layout_height="56dp"
-        android:layout_below="@+id/forgot_textview"
+        android:layout_below="@+id/sub_linear_layout_2"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="4dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginTop="38dp"
         android:text="Create Election"
         android:textColor="@android:color/white"
         android:textSize="20sp"
@@ -240,4 +246,5 @@
         app:headerLayout="@layout/navigation_header"
         app:menu="@menu/menu_navigation" />-->
 
-</RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
