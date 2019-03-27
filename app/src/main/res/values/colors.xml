@@ -4,5 +4,10 @@
     <color name="colorPrimaryDark">#00A153</color>
     <color name="colorAccent">#FCD116</color>
     <color name="colorFacebookButton">#4267B2</color>
+    <color name="colorTotalElection">#FB9208</color>
+    <color name="colorPendingElection">#4BA64F</color>
+    <color name="colorActiveElection">#E63C38</color>
+    <color name="colorFinishedElection">#05AFC4</color>
+
 
 </resources>
