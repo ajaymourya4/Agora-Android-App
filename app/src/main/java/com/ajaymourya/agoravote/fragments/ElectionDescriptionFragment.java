@@ -1,20 +1,19 @@
 package com.ajaymourya.agoravote.fragments;
 
+
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.ajaymourya.agoravote.ElectionsActivity;
 import com.ajaymourya.agoravote.R;
 
 import androidx.fragment.app.Fragment;
 
-public class PendingElectionsFragment extends Fragment {
+public class ElectionDescriptionFragment extends Fragment {
 
-    private PendingElectionsFragment pendingElectionsFragment;
 
-    public PendingElectionsFragment() {
+    public ElectionDescriptionFragment() {
         // Required empty public constructor
     }
 
@@ -22,19 +21,15 @@ public class PendingElectionsFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.fragment_pending_elections, container, false);
+        View view = inflater.inflate(R.layout.fragment_election_description, container, false);
 
         // Inflate the layout for this fragment
         return view;
     }
 }
-
-
-

@@ -47,8 +47,8 @@
             android:clipToPadding="false"
             android:divider="@android:color/transparent"
             android:dividerHeight="0.0px"
+            android:elevation="10dp"
             card_view:cardCornerRadius="8dp"
-            card_view:cardElevation="10dp"
             card_view:cardPreventCornerOverlap="false">
 
             <RelativeLayout
@@ -111,12 +111,12 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="4dp"
                     android:layout_marginBottom="4dp"
+                    android:onClick="login"
                     android:text="LOG IN"
                     android:textColor="@android:color/white"
                     android:textSize="20sp"
                     app:cornerRadius="100dp"
-                    app:rippleColor="@android:color/white"
-                    android:onClick="login"/>
+                    app:rippleColor="@android:color/white" />
 
                 <LinearLayout
                     android:id="@+id/no_account_linearlayout"
@@ -139,11 +139,11 @@
                         android:id="@+id/sign_up_textview"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:onClick="signup"
                         android:text="Sign Up"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="16sp"
-                        android:textStyle="bold"
-                        android:onClick="signup"/>
+                        android:textStyle="bold" />
                 </LinearLayout>
 
 
@@ -176,7 +176,7 @@
                         android:textColor="@android:color/white"
                         android:textSize="16sp"
                         app:backgroundTint="@color/colorFacebookButton"
-                        app:cornerRadius="15dp"
+                        app:cornerRadius="10dp"
                         app:icon="@drawable/icon_facebook"
                         app:rippleColor="@android:color/white" />
 

@@ -240,7 +240,8 @@
         app:cornerRadius="100dp"
         app:icon="@drawable/ic_add_black_24dp"
         app:rippleColor="@android:color/white"
-        android:layout_alignParentBottom="true" />
+        android:layout_alignParentBottom="true"
+        android:onClick="CreateElection"/>
 
     <!--<com.google.android.material.navigation.NavigationView
         android:id="@+id/navigation"

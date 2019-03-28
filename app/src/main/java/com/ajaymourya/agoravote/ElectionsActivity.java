@@ -8,7 +8,6 @@ import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 
 import com.ajaymourya.agoravote.fragments.ActiveElectionsFragment;

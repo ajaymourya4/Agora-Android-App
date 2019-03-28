@@ -87,4 +87,9 @@ public class DashboardActivity extends AppCompatActivity {
         intent.putExtra("TARGET_FRAGMENT", 3);
         startActivity(intent);
     }
+
+    public void CreateElection(View view) {
+        Intent intent = new Intent(this, CreateElectionsActivity.class);
+        startActivity(intent);
+    }
 }
