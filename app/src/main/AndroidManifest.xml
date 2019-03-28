@@ -9,6 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/NoAppBarTheme">
+        <activity android:name=".ElectionsActivity">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ajaymourya.agoravote.DashboardActivity" />
+        </activity>
         <activity android:name=".DashboardActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,7 +27,7 @@
             android:theme="@style/NoAppBarTheme" />
         <activity
             android:name=".LoginActivity"
-            android:theme="@style/NoAppBarTheme"></activity>
+            android:theme="@style/NoAppBarTheme" />
     </application>
 
 </manifest>

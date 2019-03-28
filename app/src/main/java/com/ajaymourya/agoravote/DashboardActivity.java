@@ -1,19 +1,17 @@
 package com.ajaymourya.agoravote;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-
-import com.google.android.material.navigation.NavigationView;
+import android.view.View;
 
 
 public class DashboardActivity extends AppCompatActivity {
@@ -30,6 +28,10 @@ public class DashboardActivity extends AppCompatActivity {
         // Set a Toolbar to replace the ActionBar.
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        ActionBar actionbar = getSupportActionBar();
+        actionbar.setDisplayHomeAsUpEnabled(true);
+        actionbar.setHomeAsUpIndicator(R.drawable.ic_menu_white_24dp);
 
         drawerLayout = findViewById(R.id.drawer_layout);
 
@@ -56,9 +58,33 @@ public class DashboardActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void intent(){
-        Intent intent  = new Intent(this,LoginActivity.class);
+    public void intent() {
+        Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
     }
 
+    public void Total(View view) {
+
+        Intent intent = new Intent(this, ElectionsActivity.class);
+        intent.putExtra("TARGET_FRAGMENT", 0);
+        startActivity(intent);
+    }
+
+    public void Pending(View view) {
+        Intent intent = new Intent(this, ElectionsActivity.class);
+        intent.putExtra("TARGET_FRAGMENT", 1);
+        startActivity(intent);
+    }
+
+    public void Active(View view) {
+        Intent intent = new Intent(this, ElectionsActivity.class);
+        intent.putExtra("TARGET_FRAGMENT", 2);
+        startActivity(intent);
+    }
+
+    public void Finished(View view) {
+        Intent intent = new Intent(this, ElectionsActivity.class);
+        intent.putExtra("TARGET_FRAGMENT", 3);
+        startActivity(intent);
+    }
 }
