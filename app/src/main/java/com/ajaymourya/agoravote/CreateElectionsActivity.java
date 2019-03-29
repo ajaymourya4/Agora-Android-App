@@ -20,6 +20,7 @@ import com.ajaymourya.agoravote.fragments.ElectionDescriptionFragment;
 import com.ajaymourya.agoravote.fragments.ElectionPrivacyFragment;
 import com.ajaymourya.agoravote.fragments.ElectionStartEndFragment;
 import com.ajaymourya.agoravote.fragments.VotingAlgorithmFragment;
+import com.kofigyan.stateprogressbar.StateProgressBar;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,7 +31,7 @@ public class CreateElectionsActivity extends AppCompatActivity {
     private ViewPager viewPager;
     private Button mPreviousButton;
     private Button mNextButton;
-    private TextView mStepCount;
+    //private TextView mStepCount;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +46,9 @@ public class CreateElectionsActivity extends AppCompatActivity {
 
         viewPager = (ViewPager) findViewById(R.id.create_election_viewpager);
         setupViewPager(viewPager);
+
+        final StateProgressBar stateProgressBar = (StateProgressBar) findViewById(R.id.horizontal_stepper);
+
 
         mPreviousButton = findViewById(R.id.previous);
         mPreviousButton.setOnClickListener(new View.OnClickListener() {
@@ -67,7 +71,7 @@ public class CreateElectionsActivity extends AppCompatActivity {
             }
         });
 
-        mStepCount = findViewById(R.id.step_count);
+        //mStepCount = findViewById(R.id.step_count);
 
         viewPager.beginFakeDrag();
 
@@ -78,38 +82,38 @@ public class CreateElectionsActivity extends AppCompatActivity {
                 switch (position) {
                     case 0:
                         mPreviousButton.setVisibility(View.INVISIBLE);
-                        mStepCount.setText("1 / 5");
+                        //mStepCount.setText("1 / 5");
+                        stateProgressBar.setCurrentStateNumber(StateProgressBar.StateNumber.ONE);
                         break;
 
                     case 1:
                         mPreviousButton.setVisibility(View.VISIBLE);
-                        //mNextButton.setVisibility(View.VISIBLE);
                         mNextButton.setText("Next");
-                        mStepCount.setText("2 / 5");
+                        //mStepCount.setText("2 / 5");
+                        stateProgressBar.setCurrentStateNumber(StateProgressBar.StateNumber.TWO);
                         break;
 
                     case 2:
                         mPreviousButton.setVisibility(View.VISIBLE);
-                        //mNextButton.setVisibility(View.VISIBLE);
                         mNextButton.setText("Next");
-                        mStepCount.setText("3 / 5");
+                        //mStepCount.setText("3 / 5");
+                        stateProgressBar.setCurrentStateNumber(StateProgressBar.StateNumber.THREE);
                         break;
                     case 3:
                         mPreviousButton.setVisibility(View.VISIBLE);
-                        //mNextButton.setVisibility(View.VISIBLE);
                         mNextButton.setText("Next");
-                        mStepCount.setText("4 / 5");
+                        //mStepCount.setText("4 / 5");
+                        stateProgressBar.setCurrentStateNumber(StateProgressBar.StateNumber.FOUR);
                         break;
                     case 4:
                         mPreviousButton.setVisibility(View.VISIBLE);
-                        //mNextButton.setVisibility(View.VISIBLE);
                         mNextButton.setText("Finish");
-                        mStepCount.setText("5 / 5");
+                        //mStepCount.setText("5 / 5");
+                        stateProgressBar.setCurrentStateNumber(StateProgressBar.StateNumber.FIVE);
                         break;
 
                     default:
                         mPreviousButton.setVisibility(View.VISIBLE);
-                        //mNextButton.setVisibility(View.VISIBLE);
                         mNextButton.setText("Next");
                         break;
                 }

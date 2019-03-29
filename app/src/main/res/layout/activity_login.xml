@@ -82,11 +82,13 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/username_edittext"
                     android:layout_margin="8dp"
-                    android:hint="Password">
+                    android:hint="Password"
+                    app:passwordToggleEnabled="true">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"/>
 
                 </com.google.android.material.textfield.TextInputLayout>
 

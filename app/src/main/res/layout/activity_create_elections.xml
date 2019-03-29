@@ -11,7 +11,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <TextView
+    <com.kofigyan.stateprogressbar.StateProgressBar
+        android:id="@+id/horizontal_stepper"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:spb_stateForegroundColor="@color/colorPrimaryDark"
+        app:spb_stateBackgroundColor="#BDBDBD"
+        app:spb_currentStateNumber="one"
+        app:spb_maxStateNumber="five"
+        app:spb_checkStateCompleted="true" />
+
+    <!--<TextView
         android:id="@+id/step_count"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -26,13 +39,13 @@
         android:paddingBottom="4dp"
         android:layout_marginRight="12dp"
         android:layout_marginTop="12dp"
-        android:background="@drawable/corner_radius"/>
+        android:background="@drawable/corner_radius" />-->
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/create_election_viewpager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/step_count"
+        android:layout_below="@+id/horizontal_stepper"
         android:layout_above="@id/next"
         android:layout_marginTop="6dp"
         android:layout_marginBottom="2dp"

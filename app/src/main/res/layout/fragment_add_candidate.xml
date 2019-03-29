@@ -118,7 +118,7 @@
                         android:layout_marginTop="18dp"
                         android:layout_marginRight="24dp"
                         android:drawableRight="@drawable/ic_delete_red_24dp"
-                        android:text="Candidate 1"
+                        android:text="Candidate 3"
                         android:textColor="@android:color/black"
                         android:textSize="18sp" />
 
@@ -131,7 +131,7 @@
                         android:layout_marginTop="18dp"
                         android:layout_marginRight="24dp"
                         android:drawableRight="@drawable/ic_delete_red_24dp"
-                        android:text="Candidate 2"
+                        android:text="Candidate 4"
                         android:textColor="@android:color/black"
 
                         android:textSize="18sp" />
