@@ -32,7 +32,7 @@
             android:clipToPadding="false"
             android:divider="@android:color/transparent"
             android:dividerHeight="0.0px"
-            card_view:cardCornerRadius="8dp"
+            card_view:cardCornerRadius="6dp"
             card_view:cardElevation="10dp"
             card_view:cardPreventCornerOverlap="false">
 
@@ -146,6 +146,29 @@
                     android:textColor="@android:color/black"
                     android:textSize="16sp" />
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/finish_date"
+                    android:layout_marginTop="6dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_settings_black_24dp"
+                        android:layout_weight="1"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_remove_red_eye_black_24dp"
+                        android:layout_weight="1"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_delete_yellow_24dp"
+                        android:layout_weight="1"/>
+                </LinearLayout>
             </RelativeLayout>
         </com.google.android.material.card.MaterialCardView>
 </RelativeLayout>
