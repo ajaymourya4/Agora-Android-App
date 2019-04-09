@@ -1,4 +1,4 @@
-package com.ajaymourya.agoravote;
+package org.aossie.agoravote;
 
 import androidx.appcompat.app.AppCompatActivity;
 

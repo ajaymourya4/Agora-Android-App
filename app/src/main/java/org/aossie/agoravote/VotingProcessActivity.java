@@ -1,4 +1,4 @@
-package com.ajaymourya.agoravote;
+package org.aossie.agoravote;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -11,16 +11,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
-import com.ajaymourya.agoravote.fragments.AddCandidateFragment;
-import com.ajaymourya.agoravote.fragments.CastYourVoteFragment;
-import com.ajaymourya.agoravote.fragments.CastYourVoteType2Fragment;
-import com.ajaymourya.agoravote.fragments.ElectionDescriptionFragment;
-import com.ajaymourya.agoravote.fragments.ElectionPrivacyFragment;
-import com.ajaymourya.agoravote.fragments.ElectionStartEndFragment;
-import com.ajaymourya.agoravote.fragments.VotingAlgorithmFragment;
-import com.ajaymourya.agoravote.fragments.VotingElectionDetailsFragment;
+
+import org.aossie.agoravote.fragments.CastYourVoteFragment;
+import org.aossie.agoravote.fragments.CastYourVoteType2Fragment;
+import org.aossie.agoravote.fragments.VotingElectionDetailsFragment;
 import com.kofigyan.stateprogressbar.StateProgressBar;
 import com.kofigyan.stateprogressbar.components.StateItem;
 import com.kofigyan.stateprogressbar.listeners.OnStateItemClickListener;

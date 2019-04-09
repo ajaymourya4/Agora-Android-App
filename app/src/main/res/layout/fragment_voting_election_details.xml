@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.VotingElectionDetailsFragment">
+    tools:context="org.aossie.agoravote.fragments.VotingElectionDetailsFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"

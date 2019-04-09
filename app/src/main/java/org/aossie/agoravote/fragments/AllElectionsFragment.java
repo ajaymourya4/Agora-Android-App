@@ -1,4 +1,4 @@
-package com.ajaymourya.agoravote.fragments;
+package org.aossie.agoravote.fragments;
 
 
 import android.os.Bundle;
@@ -6,14 +6,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.ajaymourya.agoravote.R;
+
+import org.aossie.agoravote.R;
 
 import androidx.fragment.app.Fragment;
 
-public class VotingAlgorithmFragment extends Fragment {
+public class AllElectionsFragment extends Fragment {
 
+    private AllElectionsFragment allElectionsFragment;
 
-    public VotingAlgorithmFragment() {
+    public AllElectionsFragment() {
         // Required empty public constructor
     }
 
@@ -27,7 +29,7 @@ public class VotingAlgorithmFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.fragment_voting_algorithm, container, false);
+        View view = inflater.inflate(R.layout.fragment_all_elections, container, false);
 
         // Inflate the layout for this fragment
         return view;

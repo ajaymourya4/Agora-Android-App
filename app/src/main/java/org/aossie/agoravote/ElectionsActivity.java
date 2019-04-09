@@ -1,4 +1,4 @@
-package com.ajaymourya.agoravote;
+package org.aossie.agoravote;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -10,10 +10,10 @@ import androidx.viewpager.widget.ViewPager;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.ajaymourya.agoravote.fragments.ActiveElectionsFragment;
-import com.ajaymourya.agoravote.fragments.AllElectionsFragment;
-import com.ajaymourya.agoravote.fragments.FinishedElectionsFragment;
-import com.ajaymourya.agoravote.fragments.PendingElectionsFragment;
+import org.aossie.agoravote.fragments.ActiveElectionsFragment;
+import org.aossie.agoravote.fragments.AllElectionsFragment;
+import org.aossie.agoravote.fragments.FinishedElectionsFragment;
+import org.aossie.agoravote.fragments.PendingElectionsFragment;
 import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;

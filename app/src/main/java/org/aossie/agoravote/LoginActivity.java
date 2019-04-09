@@ -1,4 +1,4 @@
-package com.ajaymourya.agoravote;
+package org.aossie.agoravote;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -51,6 +51,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void performLoginOperation() {
+        Toast.makeText(getApplicationContext(), "Please Wait", Toast.LENGTH_SHORT).show();
         JSONObject jsonObject = new JSONObject();
         try {
             jsonObject.put("password", mPasswordEditText.getText().toString());

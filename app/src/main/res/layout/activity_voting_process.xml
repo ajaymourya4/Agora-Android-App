@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".VotingProcessActivity">
+    tools:context="org.aossie.agoravote.VotingProcessActivity">
 
     <include
         layout="@layout/toolbar"
@@ -66,5 +66,5 @@
         android:layout_marginBottom="8dp"
         app:cornerRadius="100dp"
         app:rippleColor="@android:color/white"
-        android:visibility="gone"/>
+        android:visibility="invisible"/>
 </RelativeLayout>

@@ -1,11 +1,12 @@
-package com.ajaymourya.agoravote.fragments;
+package org.aossie.agoravote.fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.ajaymourya.agoravote.R;
+
+import org.aossie.agoravote.R;
 
 import androidx.fragment.app.Fragment;
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.ajaymourya.agoravote">
+    package="org.aossie.agoravote">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -11,27 +11,27 @@
         android:roundIcon="@drawable/agora_logo"
         android:supportsRtl="true"
         android:theme="@style/NoAppBarTheme">
-        <activity android:name=".VotingProcessActivity" >
+        <activity android:name="org.aossie.agoravote.VotingProcessActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.ajaymourya.agoravote.LoginActivity" />
+                android:value="org.aossie.agoravote.LoginActivity" />
         </activity>
-        <activity android:name=".CreateElectionsActivity">
+        <activity android:name="org.aossie.agoravote.CreateElectionsActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.ajaymourya.agoravote.DashboardActivity" />
+                android:value="org.aossie.agoravote.DashboardActivity" />
         </activity>
-        <activity android:name=".ElectionsActivity">
+        <activity android:name="org.aossie.agoravote.ElectionsActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.ajaymourya.agoravote.DashboardActivity" />
+                android:value="org.aossie.agoravote.DashboardActivity" />
         </activity>
-        <activity android:name=".DashboardActivity"></activity>
+        <activity android:name="org.aossie.agoravote.DashboardActivity"></activity>
         <activity
-            android:name=".SignupActivity"
+            android:name="org.aossie.agoravote.SignupActivity"
             android:theme="@style/NoAppBarTheme" />
         <activity
-            android:name=".LoginActivity"
+            android:name="org.aossie.agoravote.LoginActivity"
             android:theme="@style/NoAppBarTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

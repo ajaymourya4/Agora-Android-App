@@ -1,4 +1,4 @@
-package com.ajaymourya.agoravote;
+package org.aossie.agoravote;
 
 import android.content.Context;
 import androidx.test.InstrumentationRegistry;
