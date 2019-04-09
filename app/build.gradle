@@ -32,4 +32,9 @@ dependencies {
 
     implementation 'com.kofigyan.stateprogressbar:stateprogressbar:1.0.0'
 
+    implementation 'com.xw.repo:bubbleseekbar:3.20'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+
 }

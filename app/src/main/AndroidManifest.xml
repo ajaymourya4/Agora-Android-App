@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ajaymourya.agoravote">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,6 +11,11 @@
         android:roundIcon="@drawable/agora_logo"
         android:supportsRtl="true"
         android:theme="@style/NoAppBarTheme">
+        <activity android:name=".VotingProcessActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ajaymourya.agoravote.LoginActivity" />
+        </activity>
         <activity android:name=".CreateElectionsActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -19,9 +26,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.ajaymourya.agoravote.DashboardActivity" />
         </activity>
-        <activity android:name=".DashboardActivity">
-
-        </activity>
+        <activity android:name=".DashboardActivity"></activity>
         <activity
             android:name=".SignupActivity"
             android:theme="@style/NoAppBarTheme" />

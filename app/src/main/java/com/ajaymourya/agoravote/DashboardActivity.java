@@ -1,5 +1,6 @@
 package com.ajaymourya.agoravote;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -12,12 +13,16 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
+
+import com.google.android.material.navigation.NavigationView;
 
 
 public class DashboardActivity extends AppCompatActivity {
 
     private Toolbar toolbar;
     private DrawerLayout drawerLayout;
+    private NavigationView mNavigationView;
 
 
     @Override
@@ -34,6 +39,22 @@ public class DashboardActivity extends AppCompatActivity {
         actionbar.setHomeAsUpIndicator(R.drawable.ic_menu_white_24dp);
 
         drawerLayout = findViewById(R.id.drawer_layout);
+
+        mNavigationView = findViewById(R.id.nav_view);
+        mNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                int id = menuItem.getItemId();
+                switch(id)
+                {
+                    case R.id.nav_logout_fragment:
+                        intent();
+                    default:
+                        return true;
+                }
+
+            }
+        });
 
     }
 
