@@ -63,7 +63,7 @@
                     android:src="@drawable/agora_logo" />
 
                 <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/username_edittext"
+                    android:id="@+id/username_layout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/agora_logo"
@@ -71,21 +71,23 @@
                     android:hint="User Name">
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/username_edittext"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/password_edittext"
+                    android:id="@+id/password_layout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/username_edittext"
+                    android:layout_below="@+id/username_layout"
                     android:layout_margin="8dp"
                     android:hint="Password"
                     app:passwordToggleEnabled="true">
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/password_edittext"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="textPassword"/>
@@ -96,7 +98,7 @@
                     android:id="@+id/forgot_textview"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/password_edittext"
+                    android:layout_below="@+id/password_layout"
                     android:layout_alignParentRight="true"
                     android:layout_marginTop="4dp"
                     android:layout_marginRight="12dp"
@@ -113,7 +115,6 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="4dp"
                     android:layout_marginBottom="4dp"
-                    android:onClick="login"
                     android:text="LOG IN"
                     android:textColor="@android:color/white"
                     android:textSize="20sp"

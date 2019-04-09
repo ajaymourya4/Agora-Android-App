@@ -63,7 +63,7 @@
                     android:src="@drawable/agora_logo" />
 
                 <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/signup_username_edittext"
+                    android:id="@+id/signup_username_layout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
@@ -74,16 +74,17 @@
                     android:hint="User Name">
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/signup_username_edittext"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/firstname_edittext"
+                    android:id="@+id/firstname_layout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/signup_username_edittext"
+                    android:layout_below="@+id/signup_username_layout"
                     android:layout_marginTop="4dp"
                     android:layout_marginBottom="4dp"
                     android:layout_marginLeft="8dp"
@@ -91,16 +92,17 @@
                     android:hint="First Name">
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/firstname_edittext"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/lastname_edittext"
+                    android:id="@+id/lastname_layout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/firstname_edittext"
+                    android:layout_below="@+id/firstname_layout"
                     android:layout_marginTop="4dp"
                     android:layout_marginBottom="4dp"
                     android:layout_marginLeft="8dp"
@@ -108,16 +110,17 @@
                     android:hint="Last Name">
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/lastname_edittext"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/email_edittext"
+                    android:id="@+id/email_layout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/lastname_edittext"
+                    android:layout_below="@+id/lastname_layout"
                     android:layout_marginTop="4dp"
                     android:layout_marginBottom="4dp"
                     android:layout_marginLeft="8dp"
@@ -125,16 +128,17 @@
                     android:hint="Email">
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/email_edittext"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/signup_password_edittext"
+                    android:id="@+id/signup_password_layout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/email_edittext"
+                    android:layout_below="@+id/email_layout"
                     android:layout_marginTop="4dp"
                     android:layout_marginBottom="4dp"
                     android:layout_marginLeft="8dp"
@@ -143,6 +147,7 @@
                     app:passwordToggleEnabled="true">
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/signup_password_edittext"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="textPassword"/>
@@ -150,10 +155,10 @@
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/login_button"
+                    android:id="@+id/signup_button"
                     android:layout_width="146dp"
                     android:layout_height="56dp"
-                    android:layout_below="@+id/signup_password_edittext"
+                    android:layout_below="@+id/signup_password_layout"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="4dp"
                     android:layout_marginBottom="4dp"
@@ -161,14 +166,13 @@
                     android:textColor="@android:color/white"
                     android:textSize="20sp"
                     app:cornerRadius="100dp"
-                    app:rippleColor="@android:color/white"
-                    android:onClick="signup"/>
+                    app:rippleColor="@android:color/white" />
 
                 <LinearLayout
                     android:id="@+id/no_account_linearlayout"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/login_button"
+                    android:layout_below="@+id/signup_button"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="4dp"
                     android:layout_marginBottom="4dp">
